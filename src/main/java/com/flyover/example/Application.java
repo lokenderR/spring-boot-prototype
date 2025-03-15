@@ -23,7 +23,8 @@ public class Application {
     @RequestMapping(value = "say-hello")
     public ResponseEntity<Map<String, Object>> sayHello(
             @RequestParam(value = "name", defaultValue = "world") String name) {
-        
+
+
         return ResponseEntity.ok(Collections.singletonMap("hello", name));
         
     }
